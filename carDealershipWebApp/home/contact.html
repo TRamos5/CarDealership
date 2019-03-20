@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travis's Car Dealership</title>
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Travis's Car Dealership</h1>
+        <ul class="list-group" id="errorMessages"></ul>
+        <hr /> <!-- break line-->
+
+        <ul id="navList">
+            <li><a><i class="fas fa-car carImage"></i></a>></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../inventory/new.html">New Inventory</a></li>
+            <li><a href="../inventory/used.html">Used Inventory</a></li>
+            <li><a href="../home/specials.html">Specials</a></li>
+            <li><a href="/">Contact</a></li>
+            <li><a href="../sales/salesIndex.html">Sales</a></li>
+            <li><a href="../admin/admin.html">Admin</a></li>
+        </ul>
+
+        <h1>Contact Us</h1>
+
+        <div id="contact" class="col-lg-6 col-md-6">
+            <form id="newContactForm" style="padding-bottom: 20px">
+                <label for="name" style="padding-bottom: 20px">Name:</label>
+                <input type="text" id="add-name" value="" required><br />
+                <label for="telephone" style="padding-bottom: 20px">Phone:</label>
+                <input type="tel" value="" id="add-phone"><br />
+                <label for="email" style="padding-bottom: 20px">Email:</label>
+                <input type="email" value="" id="add-email"><br />
+                <label for="description">Message:</label>
+                <textarea class="form-control" id="add-message" rows="3" required></textarea><br />
+                <input type="submit" value="Submit" onclick="sendContactUsForm()">
+            </form>
+        </div>
+
+        <div id="mapLocation">
+            <div class="col-lg-6 col-md-6">
+                <!-- dont wont to waste the google data limit, so leave this url when you dont need it-->
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214086.1472085812!2d-97.01486382381187!3d33.027599880606516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c2f9d551bf54f%3A0x745d1026682fb422!2sQuikTrip!5e0!3m2!1sen!2sus!4v1547280696658" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+                
+                <h4>111 W Main St</h4>
+                <h4>Kent, TX 33333</h4>
+                <br />
+                <h4>Sales: 222-222-2222</h4>
+                <h4>Service: 333-333-3333</h4>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src='../js/js_copy/jquery-2.2.4.min.js'></script>
+    <script src='../js/js_copy/bootstrap.js'></script>
+    <script src='../js/contact.js'></script>
+</body>
+
+</html>

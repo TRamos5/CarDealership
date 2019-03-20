@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travis's Car Dealership</title>
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Travis's Car Dealership</h1>
+        <ul class="list-group" id="errorMessages"></ul>
+        <hr /> <!-- break line-->
+
+        <ul id="navList">
+            <li><a><i class="fas fa-car carImage"></i></a>></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../inventory/new.html">New Inventory</a></li>
+            <li><a href="../inventory/used.html">Used Inventory</a></li>
+            <li><a href="../home/specials.html">Specials</a></li>
+            <li><a href="../home/contact.html">Contact</a></li>
+            <li><a href="../sales/salesIndex.html">Sales</a></li>
+            <li><a href="admin.html">Admin</a></li>
+        </ul>
+
+        <h3>Add Vehicle</h3>
+        <hr /> <!-- break line-->
+        <!-- Add Vehicle Form  -->
+        <form id="addVehicleForm">
+            <!-- First Row -->
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="makeChoice">Make</label>
+                    <select class="custom-select" style="width: 200px;" id="makeChoice">
+                        <option value="1">Tesla</option>
+                        <option value="2">Rolls-Royce</option>
+                        <option value="3">Lamborghini</option>
+                        <option value="4">Bugatti</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="modelChoice">Model</label>
+                    <select class="custom-select" style="width: 200px;" id="modelChoice">
+                        <option value="1">Model S</option>
+                        <option value="2">Ghost</option>
+                        <option value="3">Huracan</option>
+                        <option value="4">Chiron</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Secone Row -->
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="typeChoice">Type</label>
+                    <select class="custom-select" style="width: 200px;" id="typeChoice">
+                        <option value="true">New</option>
+                        <option value="false">Used</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="styleChoice">Body Style</label>
+                    <select class="custom-select" style="width: 200px;" id="styleChoice">
+                        <option value="car">Car</option>
+                        <option value="truck">Truck</option>
+                        <option value="suv">SUV</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Third Row -->
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="yearChoice">Year</label>
+                    <input type="number" class="form-control inputLength" id="yearChoice">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="transmissionChoice">Transmission</label>
+                    <select class="custom-select" style="width: 200px;" id="transmissionChoice">
+                        <option value="Automatic">Automatic</option>
+                        <option value="Manual">Manual</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Fourth Row -->
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="colorChoice">Color</label>
+                    <select class="custom-select" style="width: 200px;" id="colorChoice">
+                        <option selected="selected" value="red">red</option>
+                        <option value="blue">blue</option>
+                        <option value="green">green</option>
+                        <option value="silver">silver</option>
+                        <option value="black">black</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="interiorChoice">Interior</label>
+                    <select class="custom-select" style="width: 200px;" id="interiorChoice">
+                        <option selected="selected" value="red">red</option>
+                        <option value="blue">blue</option>
+                        <option value="green">green</option>
+                        <option value="silver">silver</option>
+                        <option value="black">black</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Fifth Row -->
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="mileageChoice">Mileage</label>
+                    <input type="number" class="form-control inputLength" id="mileageChoice">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="vinChoice">VIN #</label>
+                    <input type="text" class="form-control inputLength" id="vinChoice">
+                </div>
+            </div>
+            <!-- Sixth Row -->
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="msrpChoice">MSRP</label>
+                    <input type="text" class="form-control inputLength" id="msrpChoice">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="saleChoice">Sale Price</label>
+                    <input type="text" class="form-control inputLength" id="saleChoice">
+                </div>
+            </div>
+            <!-- Seventh Row -->
+            <div class="form-row">
+                <label for="description">Description</label>
+                <textarea class="form-control" id="description" rows="3"></textarea>
+            </div>
+            <div class="form-row">
+                <div class="custom-file" id="pictureDiv">
+                    <label class="custom-file-label" for="customFile">Picture</label>
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <input type="text" class="form-control" value="" id="customFileOther">
+                </div>
+            </div>
+            <div class="form-row">
+                <button type="button" class="btn btn-primary" onclick="createVehicle()" id="saveButton">Save</button>
+            </div>
+        </form>
+    </div>
+
+
+
+    <script src='../js/js_copy/jquery-2.2.4.min.js'></script>
+    <script src='../js/js_copy/bootstrap.js'></script>
+    <script src='../js/addVehicle.js'></script>
+</body>
+
+</html>

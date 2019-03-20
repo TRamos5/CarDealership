@@ -1,0 +1,78 @@
+/* For nav bar */
+#navList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    height: 60px;
+    text-align: center;
+  }
+
+  .carImage{
+      margin-top: 13px;
+  }
+
+  li a {
+    line-height: 1px;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+
+/* For form on addVehicle */
+form {
+    width: 800px;
+}
+form div label {
+    display: block;
+}
+.inputLength{
+    width: 200px;
+    height: 21px;
+}
+#description{
+    width: 600px;
+}
+#customFile{
+    position: relative; 
+    visibility: visible;
+    left: 410px;
+    top: 24px;
+}
+#customFileOther{
+    width: 400px;
+}
+#saveButton{
+    margin-top: 10px;
+}
+
+/* carasoul text */
+#title{
+    color: black;
+    font-size: 80px;
+}
+#details{
+    color: black;
+    font-size: 30px;
+}
+
+/* for image on card on homepage */
+#imageCard{
+    width: 100%;
+}
+
+.searchArea{
+    padding: 2%;
+}

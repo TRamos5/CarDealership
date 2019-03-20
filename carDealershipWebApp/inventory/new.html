@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travis's Car Dealership</title>
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Travis's Car Dealership</h1>
+        <ul class="list-group" id="errorMessages"></ul>
+        <hr /> <!-- break line-->
+
+        <ul id="navList">
+            <li><a><i class="fas fa-car carImage"></i></a>></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="/">New Inventory</a></li>
+            <li><a href="../inventory/used.html">Used Inventory</a></li>
+            <li><a href="../home/specials.html">Specials</a></li>
+            <li><a href="../home/specials.html">Contact</a></li>
+            <li><a href="../sales/salesIndex.html">Sales</a></li>
+            <li><a href="../admin/admin.html">Admin</a></li>
+        </ul>
+
+        <div id="newVehicle">
+            <h1>New Vehicles</h1>
+
+            <h1> Sales </h1>
+            <div id="sales" class="searchArea" style="border:solid black 5px">
+                <div class="row">
+                    <div id="searchFormDiv">
+                        <form class="form-horizontal" role="form" id="quickSearchForm">
+                            <label for="select-item" class="col-md-2">
+                                Quick Search:
+                            </label>
+                            <input type="text" class="col-md-4" id="select-item" placeholder="Enter make, model, or year"
+                                required />
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Price</label>
+                                    <select id="priceMin"></select>
+                                    <select id="priceMax"></select>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Year</label>
+                                    <select id="yearMin"></select>
+                                    <select id="yearMax"></select>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" id="search-button" class="btn btn-default">
+                                    Search
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <h1>Search Results</h1>
+            <div id="searchResults"> </div>
+        </div>
+
+    </div>
+
+
+
+    <script src='../js/js_copy/jquery-2.2.4.min.js'></script>
+    <script src='../js/js_copy/bootstrap.js'></script>
+    <script src='../js/new.js'></script>
+</body>
+
+</html>
